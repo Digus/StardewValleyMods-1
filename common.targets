@@ -11,12 +11,11 @@
 
   <!--import mod build package-->
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.3.0" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.0-beta.20210916" />
   </ItemGroup>
 
   <!--common mod build package options-->
   <PropertyGroup>
-    <IgnoreModFilePatterns Condition="'$(MSBuildProjectName)' != 'SpaceCore'">SpaceCore\.dll, SpaceCore\.pdb</IgnoreModFilePatterns>
     <ModZipPath>$(SolutionDir)\_releases</ModZipPath>
   </PropertyGroup>
 </Project>
